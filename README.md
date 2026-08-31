@@ -29,26 +29,13 @@
 
 Atuo no desenvolvimento, manutenção e evolução de integrações entre sistemas corporativos, ERPs, CRMs, APIs e serviços de terceiros.
 
-Minha atuação envolve desde o desenvolvimento dos fluxos de integração até análise funcional e técnica, troubleshooting em produção, banco de dados, observabilidade, homologação e documentação das soluções.
+Minha atuação abrange desenvolvimento backend, análise funcional e técnica, banco de dados, observabilidade, troubleshooting de ambientes produtivos, homologação e documentação de soluções.
 
-### Principais áreas de atuação
-
-- Desenvolvimento de integrações e serviços com **Node.js e AWS Lambda**
-- Integração com **APIs REST e SOAP**
-- Construção e validação de **payloads JSON e XML**
-- Desenvolvimento de **views e consultas SQL**
-- Análise e troubleshooting em **MySQL**
-- Desenvolvimento e manutenção de relatórios com **JasperReports**
-- Monitoramento e troubleshooting com **AWS CloudWatch e Dynatrace**
-- Integrações via **SFTP, Webhooks e APIs**
-- Integração com **ERPs e CRMs**
-- Análise funcional, levantamento de requisitos e regras de negócio
-- Especificação e documentação técnica de integrações
-- Testes e homologações utilizando **Postman e cURL**
+Trabalho principalmente com **Node.js, AWS Lambda, APIs REST/SOAP, SQL/MySQL e JasperReports**, além da integração com diferentes ERPs e plataformas corporativas.
 
 <br>
 
-## Stack principal
+## Stack
 
 <div align="center">
 
@@ -79,13 +66,52 @@ Minha atuação envolve desde o desenvolvimento dos fluxos de integração até 
 
 <br>
 
+## Atuação técnica
+
+```text
+Integração de Sistemas
+│
+├── Backend & Cloud
+│   ├── Node.js / JavaScript / TypeScript
+│   └── AWS Lambda
+│
+├── APIs & Comunicação
+│   ├── REST / SOAP
+│   ├── Webhooks / SFTP
+│   └── JSON / XML
+│
+├── Dados & Relatórios
+│   ├── SQL / MySQL
+│   ├── Views e análise de dados
+│   └── JasperReports
+│
+├── Observabilidade
+│   ├── AWS CloudWatch
+│   └── Dynatrace
+│
+└── Engenharia de Integração
+    ├── Troubleshooting
+    ├── Análise Funcional
+    ├── Especificação Técnica
+    ├── Documentação Técnica
+    └── Homologação
+```
+
+### Ecossistemas
+
+**ERPs:** `SAP S/4HANA` • `SAP B1` • `Protheus` • `Senior` • `Sankhya` • `Omie`
+
+**CRM:** `HubSpot`
+
+<br>
+
 ## Projetos
 
 <div align="center">
   <img src="./projects.svg" width="100%" alt="Projetos em destaque" />
 </div>
 
-### Públicos em destaque
+### Projetos públicos
 
 <div align="center">
   <a href="https://github.com/Valdiclei-Filho/IntegrationCSV_TXT"><b>IntegrationCSV_TXT</b></a>
@@ -102,65 +128,8 @@ Minha atuação envolve desde o desenvolvimento dos fluxos de integração até 
 </div>
 
 <p align="center">
-  Projetos privados são representados apenas por atividade agregada, sem expor nomes, URLs, descrições ou conteúdo.
+  Além dos projetos públicos, mantenho atividade em projetos privados, apresentada apenas por métricas agregadas.
 </p>
-
-<br>
-
-## Integrações e sistemas
-
-**ERPs**
-
-`SAP S/4HANA` • `SAP B1` • `Protheus` • `Senior` • `Sankhya` • `Omie`
-
-**CRM**
-
-`HubSpot`
-
-**Protocolos e formatos**
-
-`REST` • `SOAP` • `Webhooks` • `SFTP` • `JSON` • `XML`
-
-**Observabilidade**
-
-`AWS CloudWatch` • `Dynatrace`
-
-<br>
-
-## Atuação técnica
-
-```text
-Integração de Sistemas
-├── Backend
-│   ├── Node.js
-│   ├── JavaScript / TypeScript
-│   └── AWS Lambda
-│
-├── APIs e comunicação
-│   ├── REST
-│   ├── SOAP
-│   ├── Webhooks
-│   ├── SFTP
-│   └── JSON / XML
-│
-├── Dados e relatórios
-│   ├── MySQL
-│   ├── SQL
-│   ├── Views
-│   └── JasperReports
-│
-├── Observabilidade
-│   ├── AWS CloudWatch
-│   └── Dynatrace
-│
-└── Engenharia de Integração
-    ├── Troubleshooting
-    ├── Análise Funcional
-    ├── Especificação Técnica
-    ├── Documentação Técnica
-    ├── Homologação
-    └── Integração com ERPs e CRMs
-```
 
 <br>
 
@@ -170,9 +139,51 @@ Integração de Sistemas
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Valdiclei-Filho/Valdiclei-Filho/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Valdiclei-Filho/Valdiclei-Filho/output/github-contribution-grid-snake.svg" />
-    <img alt="Animação das contribuições no GitHub" src="https://raw.githubusercontent.com/Valdiclei-Filho/Valdiclei-Filho/output/github-contribution-grid-snake.svg" />
+    <img
+      alt="Animação das contribuições no GitHub"
+      src="https://raw.githubusercontent.com/Valdiclei-Filho/Valdiclei-Filho/output/github-contribution-grid-snake.svg"
+    />
   </picture>
 </p>
+
+<br>
+
+## Resumo de contribuições
+
+<div align="center">
+
+  <img
+    src="./profile-summary-card-output/github_dark/0-profile-details.svg"
+    alt="Detalhes do perfil"
+  />
+
+  <br>
+
+  <img
+    src="./profile-summary-card-output/github_dark/1-repos-per-language.svg"
+    alt="Repositórios por linguagem"
+  />
+
+  <img
+    src="./profile-summary-card-output/github_dark/2-most-commit-language.svg"
+    alt="Linguagens por commits"
+  />
+
+  <br>
+
+  <img
+    src="./profile-summary-card-output/github_dark/3-stats.svg"
+    alt="Estatísticas"
+  />
+
+  <img
+    src="./profile-summary-card-output/github_dark/4-productive-time.svg"
+    alt="Horários de maior produtividade"
+  />
+
+</div>
+
+<br>
 
 <div align="center">
   <img
@@ -180,21 +191,4 @@ Integração de Sistemas
     height="175"
     alt="GitHub streak"
   />
-
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Valdiclei-Filho&locale=pt-br&layout=compact&langs_count=8&size_weight=0.5&count_weight=0.5&theme=midnight-purple&hide_border=false"
-    height="175"
-    alt="Linguagens dos repositórios públicos"
-  />
-</div>
-
-<br>
-
-## Resumo de contribuições
-
-> Os cards abaixo são gerados por GitHub Actions. Se o secret `SUMMARY_GITHUB_TOKEN` tiver acesso somente leitura aos repositórios privados selecionados e as contribuições privadas estiverem habilitadas no perfil, os totais podem incluir atividade privada sem divulgar os nomes dos repositórios.
-
-<div align="center">
-  <img src="./profile-summary-card-output/github_dark/0-profile-details.svg" alt="Detalhes do perfil" />
-  <img src="./profile-summary-card-output/github_dark/3-stats.svg" alt="Estatísticas do GitHub" />
 </div>
