@@ -56,6 +56,7 @@ Trabalho principalmente com **Node.js, AWS Lambda, APIs REST/SOAP, SQL/MySQL e J
 <br>
 
 <img src="https://img.shields.io/badge/JasperReports-B22222?style=for-the-badge" alt="JasperReports" />
+<img src="https://img.shields.io/badge/JRXML-8B0000?style=for-the-badge" alt="JRXML" />
 <img src="https://img.shields.io/badge/AWS%20CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch&logoColor=white" alt="AWS CloudWatch" />
 <img src="https://img.shields.io/badge/Dynatrace-1496FF?style=for-the-badge&logo=dynatrace&logoColor=white" alt="Dynatrace" />
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
@@ -81,9 +82,8 @@ Integração de Sistemas
 │   └── JSON / XML
 │
 ├── Dados & Relatórios
-│   ├── SQL / MySQL
-│   ├── Views e análise de dados
-│   └── JasperReports
+│   ├── SQL / MySQL / Views
+│   └── JasperReports / JRXML
 │
 ├── Observabilidade
 │   ├── AWS CloudWatch
@@ -105,10 +105,10 @@ Integração de Sistemas
 
 <br>
 
-## Projetos
+## Projetos & Experiência Técnica
 
 <div align="center">
-  <img src="./projects.svg" width="100%" alt="Projetos em destaque" />
+  <img src="./projects.svg" width="100%" alt="Projetos e experiência técnica em destaque" />
 </div>
 
 ### Projetos públicos
@@ -135,16 +135,17 @@ Integração de Sistemas
 
 ## Atividade GitHub
 
-<p align="center">
+<div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Valdiclei-Filho/Valdiclei-Filho/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Valdiclei-Filho/Valdiclei-Filho/output/github-contribution-grid-snake.svg" />
     <img
+      width="100%"
       alt="Animação das contribuições no GitHub"
       src="https://raw.githubusercontent.com/Valdiclei-Filho/Valdiclei-Filho/output/github-contribution-grid-snake.svg"
     />
   </picture>
-</p>
+</div>
 
 <br>
 
@@ -154,41 +155,42 @@ Integração de Sistemas
 
   <img
     src="./profile-summary-card-output/github_dark/0-profile-details.svg"
+    width="98%"
     alt="Detalhes do perfil"
   />
 
-  <br>
+  <br><br>
 
   <img
     src="./profile-summary-card-output/github_dark/1-repos-per-language.svg"
+    width="49%"
     alt="Repositórios por linguagem"
   />
-
   <img
     src="./profile-summary-card-output/github_dark/2-most-commit-language.svg"
+    width="49%"
     alt="Linguagens por commits"
   />
 
-  <br>
+  <br><br>
 
   <img
     src="./profile-summary-card-output/github_dark/3-stats.svg"
+    width="49%"
     alt="Estatísticas"
   />
-
   <img
     src="./profile-summary-card-output/github_dark/4-productive-time.svg"
+    width="49%"
     alt="Horários de maior produtividade"
   />
 
-</div>
+  <br><br>
 
-<br>
-
-<div align="center">
   <img
     src="https://streak-stats.demolab.com?user=Valdiclei-Filho&locale=pt_BR&mode=daily&theme=midnight-purple&hide_border=false&border_radius=5"
-    height="175"
+    width="62%"
     alt="GitHub streak"
   />
+
 </div>
