@@ -16,7 +16,7 @@
   </a>
   <a href="https://github.com/Valdiclei-Filho">
     <img
-      src="./github-badge.svg"
+      src="./github-badge.svg?v=2"
       alt="GitHub"
     />
   </a>
