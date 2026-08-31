@@ -82,7 +82,7 @@ Minha atuação envolve desde o desenvolvimento dos fluxos de integração até 
 ## Projetos
 
 <div align="center">
-  <img src="./assets/projects.svg" width="100%" alt="Projetos em destaque" />
+  <img src="./projects.svg" width="100%" alt="Projetos em destaque" />
 </div>
 
 ### Públicos em destaque
