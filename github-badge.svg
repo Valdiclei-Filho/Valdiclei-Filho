@@ -1,13 +1,13 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="98"
+  width="100"
   height="28"
-  viewBox="0 0 98 28"
+  viewBox="0 0 100 28"
 >
   <rect
     x="0.5"
     y="0.5"
-    width="97"
+    width="99"
     height="27"
     rx="3"
     fill="#181717"
@@ -27,8 +27,9 @@
   </svg>
 
   <text
-    x="34"
+    x="90"
     y="18"
+    text-anchor="end"
     fill="#FFFFFF"
     font-family="Verdana, Arial, sans-serif"
     font-size="11"
