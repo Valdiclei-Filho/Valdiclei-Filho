@@ -9,10 +9,19 @@
 
 <div align="center">
   <a href="https://www.linkedin.com/in/valdiclei-filho/">
-    <img src="https://img.shields.io/badge/LinkedIn-Valdiclei%20Filho-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img
+      src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+      alt="LinkedIn"
+    />
   </a>
+
+  &nbsp;
+
   <a href="https://github.com/Valdiclei-Filho">
-    <img src="https://img.shields.io/badge/GitHub-Valdiclei--Filho-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img
+      src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
+      alt="GitHub"
+    />
   </a>
 </div>
 
