@@ -1,0 +1,71 @@
+<svg width="1000" height="330" viewBox="0 0 1000 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Projetos em destaque</title>
+  <desc id="desc">Animação alternando projetos públicos e atividade privada anonimizada.</desc>
+
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 2; }
+    .title { fill: #f0f6fc; font: 700 26px 'Segoe UI', Ubuntu, sans-serif; }
+    .subtitle { fill: #8b949e; font: 400 15px 'Segoe UI', Ubuntu, sans-serif; }
+    .label-public { fill: #3fb950; font: 700 14px 'Segoe UI', Ubuntu, sans-serif; }
+    .label-private { fill: #a371f7; font: 700 14px 'Segoe UI', Ubuntu, sans-serif; }
+    .project { fill: #f0f6fc; font: 700 24px 'Segoe UI', Ubuntu, sans-serif; }
+    .meta { fill: #8b949e; font: 400 15px 'Segoe UI', Ubuntu, sans-serif; }
+    .cursor { fill: #58a6ff; }
+    .line { stroke: #21262d; stroke-width: 1; }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #ffffff; stroke: #d0d7de; }
+      .title, .project { fill: #1f2328; }
+      .subtitle, .meta { fill: #656d76; }
+      .line { stroke: #d8dee4; }
+    }
+  </style>
+
+  <rect class="bg" x="1" y="1" width="998" height="328" rx="18"/>
+  <text class="title" x="42" y="55">Project Stream</text>
+  <text class="subtitle" x="42" y="82">public repositories + private activity without leaking private details</text>
+  <line class="line" x1="42" y1="105" x2="958" y2="105"/>
+
+  <!-- Public projects: one card is visible at a time -->
+  <g id="public-1" opacity="0">
+    <text class="label-public" x="42" y="145">PUBLIC PROJECT</text>
+    <text class="project" x="42" y="182">IntegrationCSV_TXT</text>
+    <text class="meta" x="42" y="210">github.com/Valdiclei-Filho/IntegrationCSV_TXT</text>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.28;0.32;1" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <g id="public-2" opacity="0">
+    <text class="label-public" x="42" y="145">PUBLIC PROJECT</text>
+    <text class="project" x="42" y="182">Gestao_Viagem</text>
+    <text class="meta" x="42" y="210">github.com/Valdiclei-Filho/Gestao_Viagem</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.28;0.32;0.48;0.52;1" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <g id="public-3" opacity="0">
+    <text class="label-public" x="42" y="145">PUBLIC PROJECT</text>
+    <text class="project" x="42" y="182">Book_Control</text>
+    <text class="meta" x="42" y="210">github.com/Valdiclei-Filho/Book_Control</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.48;0.52;0.64;0.68;1" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <g id="public-4" opacity="0">
+    <text class="label-public" x="42" y="145">PUBLIC PROJECT</text>
+    <text class="project" x="42" y="182">park-ease • Banana_MQTT • SocialMedia</text>
+    <text class="meta" x="42" y="210">outros projetos públicos disponíveis no perfil</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.64;0.68;0.78;0.82;1" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <g id="private" opacity="0">
+    <text class="label-private" x="42" y="145">PRIVATE PROJECTS</text>
+    <text class="project" x="42" y="182">Atividade privada preservada</text>
+    <text class="meta" x="42" y="210">contribuições agregadas • nomes e conteúdo não são publicados</text>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.78;0.82;0.96;1" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <rect x="42" y="252" width="916" height="1" class="line"/>
+
+  <text class="meta" x="42" y="290">Node.js  •  AWS Lambda  •  APIs  •  SQL  •  JasperReports  •  Integrações</text>
+
+  <rect class="cursor" x="937" y="276" width="9" height="19">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
