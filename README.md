@@ -14,10 +14,9 @@
       alt="LinkedIn"
     />
   </a>
-  
   <a href="https://github.com/Valdiclei-Filho">
     <img
-      src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
+      src="./github-badge.svg"
       alt="GitHub"
     />
   </a>
