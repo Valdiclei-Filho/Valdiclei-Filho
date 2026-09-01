@@ -9,8 +9,9 @@ function coordinateAnimation(attributeName: "cx" | "cy", targets: BeamTarget[], 
   const coordinate = attributeName === "cx" ? "x" : "y";
   const last = targets.at(-1);
   if (!last) return "";
-  const values = [...targets.map((target) => String(target[coordinate] + offset)), String(last[coordinate] + offset)];
-  const times = [...targets.map((target) => keyTime(target.startTime, timing)), "1"];
+  const first = targets[0] ?? last;
+  const values = [String(first[coordinate] + offset), ...targets.map((target) => String(target[coordinate] + offset)), String(last[coordinate] + offset)];
+  const times = ["0", ...targets.map((target) => keyTime(target.startTime, timing)), "1"];
   return `<animate attributeName="${attributeName}" values="${values.join(";")}" keyTimes="${times.join(";")}" calcMode="discrete" dur="${timing.cycleDuration}s" repeatCount="indefinite"/>`;
 }
 

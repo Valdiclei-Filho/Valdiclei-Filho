@@ -9,8 +9,8 @@ function positionAnimation(attributeName: "x2" | "y2", targets: BeamTarget[], ti
   const last = targets.at(-1);
   if (!last) return "";
   const coordinate = attributeName === "x2" ? "x" : "y";
-  const values = [...targets.map((target) => String(target[coordinate])), String(last[coordinate])];
-  const times = [...targets.map((target) => keyTime(target.startTime, timing)), "1"];
+  const values = [String(targets[0]?.[coordinate] ?? last[coordinate]), ...targets.map((target) => String(target[coordinate])), String(last[coordinate])];
+  const times = ["0", ...targets.map((target) => keyTime(target.startTime, timing)), "1"];
   return `<animate attributeName="${attributeName}" values="${values.join(";")}" keyTimes="${times.join(";")}" calcMode="discrete" dur="${timing.cycleDuration}s" repeatCount="indefinite"/>`;
 }
 
@@ -43,8 +43,9 @@ function reticleOpacity(targets: BeamTarget[], timing: TargetingTiming): string 
 function reticlePosition(targets: BeamTarget[], timing: TargetingTiming): string {
   const last = targets.at(-1);
   if (!last) return "";
-  const values = [...targets.map(({ x, y }) => `${x} ${y}`), `${last.x} ${last.y}`];
-  const times = [...targets.map((target) => keyTime(target.startTime, timing)), "1"];
+  const first = targets[0] ?? last;
+  const values = [`${first.x} ${first.y}`, ...targets.map(({ x, y }) => `${x} ${y}`), `${last.x} ${last.y}`];
+  const times = ["0", ...targets.map((target) => keyTime(target.startTime, timing)), "1"];
   return `<animateTransform attributeName="transform" type="translate" values="${values.join(";")}" keyTimes="${times.join(";")}" calcMode="discrete" dur="${timing.cycleDuration}s" repeatCount="indefinite"/>`;
 }
 

@@ -31,11 +31,14 @@ export const EFFECT = {
 } as const;
 
 export const TARGETING = {
-  minimumCycleSeconds: 20,
-  maximumCycleSeconds: 60,
-  secondsPerTarget: 0.85,
-  initialDelaySeconds: 1,
-  completionHoldSeconds: 2.5,
+  minimumFiringSeconds: 18,
+  maximumFiringSeconds: 90,
+  secondsPerTarget: 2,
+  minimumRestoreSeconds: 4,
+  maximumRestoreSeconds: 30,
+  secondsPerRestoreTarget: 0.45,
+  initialDelaySeconds: 1.5,
+  completionHoldSeconds: 1.5,
   coreX: 112,
   coreY: 151,
   gridX: 250,
@@ -63,20 +66,27 @@ export type TargetingTiming = {
   firingDuration: number;
   initialDelayDuration: number;
   completionHoldDuration: number;
+  restoreDuration: number;
+  restoreStart: number;
   slotDuration: number;
+  restoreSlotDuration: number;
 };
 
 export function getTargetingTiming(targetCount: number): TargetingTiming {
   const completionHoldDuration = TARGETING.completionHoldSeconds;
   const initialDelayDuration = TARGETING.initialDelaySeconds;
-  const requestedCycle = initialDelayDuration + targetCount * TARGETING.secondsPerTarget + completionHoldDuration;
-  const cycleDuration = Math.min(TARGETING.maximumCycleSeconds, Math.max(TARGETING.minimumCycleSeconds, requestedCycle));
-  const firingDuration = cycleDuration - initialDelayDuration - completionHoldDuration;
+  const firingDuration = Math.min(TARGETING.maximumFiringSeconds, Math.max(TARGETING.minimumFiringSeconds, targetCount * TARGETING.secondsPerTarget));
+  const restoreDuration = Math.min(TARGETING.maximumRestoreSeconds, Math.max(TARGETING.minimumRestoreSeconds, targetCount * TARGETING.secondsPerRestoreTarget));
+  const restoreStart = initialDelayDuration + firingDuration + completionHoldDuration;
+  const cycleDuration = restoreStart + restoreDuration;
   return {
     cycleDuration,
     firingDuration,
     initialDelayDuration,
     completionHoldDuration,
-    slotDuration: targetCount > 0 ? firingDuration / targetCount : firingDuration
+    restoreDuration,
+    restoreStart,
+    slotDuration: targetCount > 0 ? firingDuration / targetCount : firingDuration,
+    restoreSlotDuration: targetCount > 0 ? restoreDuration / targetCount : restoreDuration
   };
 }

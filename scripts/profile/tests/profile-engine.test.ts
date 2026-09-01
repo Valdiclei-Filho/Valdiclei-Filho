@@ -8,6 +8,7 @@ import { GENERATED_ASSETS } from "../assets.js";
 import { renderContributionBeam } from "../contribution-beam/renderer.js";
 import { contributionCoordinates, selectBeamTargets } from "../contribution-beam/target-selector.js";
 import { renderDashboard } from "../dashboard/renderer.js";
+import { getTargetingTiming } from "../design-system.js";
 import { loadMockProfile } from "../fixtures/load-mock.js";
 import { normalizeLevel } from "../github/load-profile.js";
 import { generate } from "../generate.js";
@@ -65,8 +66,9 @@ void test("feixes terminam exatamente nos alvos e mudam de ângulo", () => {
   const profile = loadMockProfile();
   const targets = selectBeamTargets(profile);
   const svg = renderContributionBeam(profile, getTheme("dark"));
-  assert.match(svg, new RegExp(`values="${targets.map(({ x }) => x).join(";")};${targets.at(-1)?.x}"`));
-  assert.match(svg, new RegExp(`values="${targets.map(({ y }) => y).join(";")};${targets.at(-1)?.y}"`));
+  assert.match(svg, new RegExp(`values="${targets[0]?.x};${targets.map(({ x }) => x).join(";")};${targets.at(-1)?.x}"`));
+  assert.match(svg, new RegExp(`values="${targets[0]?.y};${targets.map(({ y }) => y).join(";")};${targets.at(-1)?.y}"`));
+  assert.match(svg, /keyTimes="0;0\.\d+/);
   assert.ok(new Set(targets.map(({ y }) => y)).size > 1);
 });
 
@@ -74,11 +76,17 @@ void test("progresso avança por célula ativa e reinicia junto com a matriz", (
   const profile = loadMockProfile();
   const targets = selectBeamTargets(profile);
   const svg = renderContributionBeam(profile, getTheme("dark"));
-  assert.equal((svg.match(/data-progress-step=/g) ?? []).length, targets.length + 1);
+  assert.equal((svg.match(/data-progress-step=/g) ?? []).length, targets.length * 2);
   assert.equal((svg.match(/data-cell-removal=/g) ?? []).length, targets.length);
+  assert.equal((svg.match(/data-cell-restore=/g) ?? []).length, targets.length);
   assert.match(svg, />1 \/ \d+ • [^<]+%/);
   assert.match(svg, new RegExp(`>${targets.length} / ${targets.length} • 100%`));
-  assert.match(svg, /CYCLE COMPLETE • RESETTING MATRIX/);
+  assert.match(svg, /data-progress-bar="restore"/);
+  assert.match(svg, /RESTORING MATRIX • REVERSE PROGRESS/);
+  assert.match(svg, /values="722;722;0"/);
+  const timing = getTargetingTiming(19);
+  assert.ok(timing.slotDuration >= 1.9);
+  assert.ok(timing.restoreDuration >= 8);
 });
 
 void test("matriz sem atividade exibe fallback sem coordenadas inválidas", () => {

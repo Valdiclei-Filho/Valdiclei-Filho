@@ -81,9 +81,11 @@ Cada célula com contribuição recebe um slot exclusivo, sem disparos simultân
 94–100% COOLDOWN
 ```
 
-O ciclo é calculado pela quantidade real de células ativas, com mínimo de vinte e máximo de sessenta segundos, incluindo 2,5 segundos para exibir a conclusão. `beam-renderer.ts` reutiliza o mesmo feixe entre o VF Core e cada alvo. No impacto, a célula atingida desaparece e a barra avança `1 ÷ total de células ativas`. Depois do último disparo, o painel mostra 100%; ao reiniciar o ciclo, todas as células reaparecem simultaneamente e a barra volta a 0%.
+O ciclo é calculado pela quantidade real de células ativas. A fase de disparos reserva dois segundos por alvo, limitada entre 18 e 90 segundos. Depois de uma pausa de conclusão em 100%, a restauração dura aproximadamente 0,45 segundo por célula, limitada entre 4 e 30 segundos. `beam-renderer.ts` reutiliza o mesmo feixe entre o VF Core e cada alvo e mantém as coordenadas animadas desde `keyTime=0`, requisito para o navegador executar toda a sequência de mira.
 
-`impact-renderer.ts` move um único efeito de impacto pela sequência, evitando centenas de efeitos duplicados. `progress-renderer.ts` mantém barra, contagem e porcentagem sincronizadas com as remoções. `target-timeline.ts` apresenta a fase atual e o estado `CYCLE COMPLETE • RESETTING MATRIX`.
+No impacto, a célula atingida desaparece e a barra avança `1 ÷ total de células ativas`. Depois do último disparo, o painel mostra 100%. Em seguida, a barra recua continuamente enquanto as células reaparecem, na ordem da sequência e exatamente nos limiares correspondentes. Ao final da restauração, matriz e barra chegam juntas ao estado completo/0%.
+
+`impact-renderer.ts` move um único efeito de impacto pela sequência, evitando centenas de efeitos duplicados. `progress-renderer.ts` mantém barra, contagem e porcentagem sincronizadas nas direções `fire` e `restore`. `target-timeline.ts` apresenta as fases atuais, `CYCLE COMPLETE • 100%` e `RESTORING MATRIX • REVERSE PROGRESS`.
 
 Se SMIL não executar, o fallback continua exibindo frame, título, core, matriz, intensidade oficial e métricas; feixes e impactos partem de opacidade zero.
 

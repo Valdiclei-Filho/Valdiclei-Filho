@@ -44,9 +44,11 @@ export function renderTargetTimeline(targets: BeamTarget[], theme: ProfileTheme,
   ];
   const lastTarget = targets.at(-1);
   const completionStart = lastTarget ? lastTarget.startTime + timing.slotDuration * PHASE.impactEnd : timing.firingDuration;
-  const completionTimes = `0;${(completionStart / timing.cycleDuration).toFixed(5)};1`;
+  const completionTimes = `0;${(completionStart / timing.cycleDuration).toFixed(5)};${(timing.restoreStart / timing.cycleDuration).toFixed(5)};1`;
+  const restoreTimes = `0;${(timing.restoreStart / timing.cycleDuration).toFixed(5)};1`;
   const resetEnd = (timing.initialDelayDuration / timing.cycleDuration).toFixed(5);
   return `<g opacity="0"><circle cx="42" cy="327" r="4" fill="${theme.green}"/><text x="56" y="332" fill="${theme.green}" font-family="${FONT.interface}" font-size="${TYPE.metadata}">MATRIX ONLINE • PROGRESS RESET TO 0%</text><animate attributeName="opacity" values="1;0;0" keyTimes="0;${resetEnd};1" calcMode="discrete" dur="${timing.cycleDuration}s" repeatCount="indefinite"/></g>
     ${phases.map((phase) => `<g opacity="0"><circle cx="42" cy="327" r="4" fill="${phase.color}"/><text x="56" y="332" fill="${phase.color}" font-family="${FONT.interface}" font-size="${TYPE.metadata}">${phase.label}</text>${repeatedPhaseAnimation(targets, phase, timing)}</g>`).join("\n")}
-    <g opacity="0"><circle cx="42" cy="327" r="4" fill="${theme.green}"/><text x="56" y="332" fill="${theme.green}" font-family="${FONT.interface}" font-size="${TYPE.metadata}">CYCLE COMPLETE • RESETTING MATRIX</text><animate attributeName="opacity" values="0;1;1" keyTimes="${completionTimes}" calcMode="discrete" dur="${timing.cycleDuration}s" repeatCount="indefinite"/></g>`;
+    <g opacity="0"><circle cx="42" cy="327" r="4" fill="${theme.green}"/><text x="56" y="332" fill="${theme.green}" font-family="${FONT.interface}" font-size="${TYPE.metadata}">CYCLE COMPLETE • 100%</text><animate attributeName="opacity" values="0;1;0;0" keyTimes="${completionTimes}" calcMode="discrete" dur="${timing.cycleDuration}s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="42" cy="327" r="4" fill="${theme.orange}"/><text x="56" y="332" fill="${theme.orange}" font-family="${FONT.interface}" font-size="${TYPE.metadata}">RESTORING MATRIX • REVERSE PROGRESS</text><animate attributeName="opacity" values="0;1;1" keyTimes="${restoreTimes}" calcMode="discrete" dur="${timing.cycleDuration}s" repeatCount="indefinite"/></g>`;
 }
