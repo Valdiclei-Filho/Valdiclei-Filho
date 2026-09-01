@@ -1,5 +1,9 @@
 <div align="center">
-  <img src="./assets/command-center.svg" width="100%" alt="Central de integrações de Valdiclei Filho" />
+  <img
+    src="./assets/integration-command-center.png?v=2"
+    width="100%"
+    alt="Central de integrações de Valdiclei Filho: desenvolvedor de integrações com foco em Docker, Node.js, TypeScript, AWS Lambda, APIs, dados e observabilidade"
+  />
 </div>
 
 <br>
@@ -15,32 +19,6 @@
 Desenvolvo, mantenho e evoluo integrações entre sistemas corporativos, ERPs, CRMs, APIs e serviços de terceiros. Minha atuação combina backend, análise funcional e técnica, banco de dados, observabilidade, troubleshooting, homologação e documentação de soluções.
 
 Meu foco é transformar regras de negócio e sistemas distintos em fluxos confiáveis, rastreáveis e compreensíveis para pessoas e equipes técnicas.
-
-## Stack operacional
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white" alt="AWS Lambda" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <br>
-  <img src="https://img.shields.io/badge/REST%20API-005571?style=for-the-badge" alt="REST API" />
-  <img src="https://img.shields.io/badge/SOAP-6A5ACD?style=for-the-badge" alt="SOAP" />
-  <img src="https://img.shields.io/badge/JasperReports-B22222?style=for-the-badge" alt="JasperReports" />
-  <img src="https://img.shields.io/badge/AWS%20CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch&logoColor=white" alt="AWS CloudWatch" />
-  <img src="https://img.shields.io/badge/Dynatrace-1496FF?style=for-the-badge&logo=dynatrace&logoColor=white" alt="Dynatrace" />
-</div>
-
-<p align="center"><sub>Em evolução: Python • FastAPI • PostgreSQL • backend dedicado</sub></p>
-
-## Módulos de atuação
-
-<div align="center">
-  <img src="./assets/integration-modules.svg" width="100%" alt="Módulos de integrações corporativas, observabilidade, relatórios e tecnologias em evolução" />
-</div>
-
-**Ecossistemas:** `SAP S/4HANA` • `SAP B1` • `Protheus` • `Senior` • `Sankhya` • `Omie` • `HubSpot`
 
 ## Projetos públicos
 
@@ -70,9 +48,9 @@ Meu foco é transformar regras de negócio e sistemas distintos em fluxos confi�
   </picture>
 </div>
 
-<p align="center"><sub>Protocolo em evolução: a matriz atual será preservada e receberá uma animação própria de feixe de energia.</sub></p>
+<p align="center"><sub>Protocolo em evolução: a rota da cobra será preservada e a interação visual será substituída por um feixe de energia próprio.</sub></p>
 
-## Telemetria do perfil
+## Telemetria viva
 
 <div align="center">
   <img src="./profile-summary-card-output/github_dark/0-profile-details.svg" width="98%" alt="Detalhes do perfil" />
