@@ -1,0 +1,7 @@
+node_modules/
+build/
+assets/generated/
+.env
+.env.*
+!.env.example
+*.log

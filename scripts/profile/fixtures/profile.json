@@ -1,0 +1,19 @@
+{
+  "login": "Valdiclei-Filho",
+  "displayName": "Valdiclei Filho",
+  "location": "Blumenau — SC, Brasil",
+  "statistics": { "contributions": 486, "commits": 327, "pullRequests": 41, "issues": 78, "repositories": 21 },
+  "languages": [
+    { "name": "TypeScript", "color": "#3178c6", "bytes": 480000, "repositories": 8 },
+    { "name": "Python", "color": "#3572A5", "bytes": 290000, "repositories": 4 },
+    { "name": "Kotlin", "color": "#A97BFF", "bytes": 185000, "repositories": 3 },
+    { "name": "JavaScript", "color": "#f1e05a", "bytes": 132000, "repositories": 6 },
+    { "name": "SQL", "color": "#e38c00", "bytes": 92000, "repositories": 5 },
+    { "name": "HTML", "color": "#e34c26", "bytes": 71000, "repositories": 7 }
+  ],
+  "contributions": {
+    "startDate": "2025-08-31",
+    "weeks": 53,
+    "pattern": [0, 1, 0, 2, 1, 0, 3, 0, 1, 4, 2, 0, 6, 1, 0, 3, 8, 2, 1, 0, 5, 0, 2, 9, 1, 3, 0, 12, 4, 2, 0, 7, 15, 3, 1, 5, 18, 6, 2, 0, 9, 21, 5, 3, 1, 13, 8, 4, 2, 0]
+  }
+}

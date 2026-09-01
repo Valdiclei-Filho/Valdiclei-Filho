@@ -1,0 +1,28 @@
+{
+  "name": "vf-contribution-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dynamic GitHub profile engine for Valdiclei-Filho.",
+  "engines": { "node": ">=20.19.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "tsx --test scripts/profile/tests/profile-engine.test.ts",
+    "generate": "tsx scripts/profile/generate.ts",
+    "generate:mock": "tsx scripts/profile/generate.ts --mock",
+    "validate": "tsx scripts/profile/validate-generated.ts"
+  },
+  "dependencies": { "fast-xml-parser": "5.11.1" },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.3.0",
+    "eslint": "10.9.1",
+    "globals": "16.3.0",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.69.0",
+    "yaml": "2.9.0"
+  }
+}

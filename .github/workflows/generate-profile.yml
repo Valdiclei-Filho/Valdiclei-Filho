@@ -1,0 +1,74 @@
+name: VF Contribution Engine
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/profile/**"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
+      - "eslint.config.mjs"
+      - ".github/workflows/generate-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vf-contribution-engine
+  cancel-in-progress: false
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.1
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate source
+        run: |
+          npm run lint
+          npm run typecheck
+          npm test
+          PROFILE_OUTPUT_DIR=mock-dist npm run generate:mock
+          PROFILE_OUTPUT_DIR=mock-dist npm run validate
+
+      - name: Generate profile from GitHub
+        env:
+          GITHUB_PROFILE: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || github.token }}
+          PROFILE_OUTPUT_DIR: dist
+        run: |
+          npm run generate
+          npm run validate
+
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          path: publication
+
+      - name: Publish validated SVGs
+        run: |
+          cp dist/profile-dashboard-*.svg publication/
+          cp dist/contribution-beam-*.svg publication/
+          cd publication
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-dashboard-*.svg contribution-beam-*.svg
+          git diff --cached --quiet || git commit -m "chore: update VF profile assets"
+          git push
