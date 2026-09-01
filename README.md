@@ -57,5 +57,5 @@
   Blumenau — SC, Brasil ·
   <a href="https://github.com/Valdiclei-Filho">GitHub</a> ·
   <a href="https://www.linkedin.com/in/valdiclei-filho/">LinkedIn</a> ·
-  <a href="mailto:contato@valdiclei.dev">contato@valdiclei.dev</a>
+  <a href="mailto:valdicleifilho13@gmail.com">valdicleifilho13@gmail.com</a>
 </sub></p>
