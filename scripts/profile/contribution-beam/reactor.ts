@@ -1,22 +1,19 @@
-import { ANIMATION_DURATION_SECONDS } from "../config.js";
-import type { ProfileTheme } from "../model.js";
+import { PHASE, TARGETING } from "../design-system.js";
+import type { BeamTarget, ProfileTheme } from "../model.js";
 
-export function renderVfCore(theme: ProfileTheme): string {
-  return `<g transform="translate(91 139)">
-    <circle r="49" fill="none" stroke="${theme.border}" stroke-width="1" stroke-dasharray="5 7">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
-    </circle>
-    <ellipse rx="57" ry="27" fill="none" stroke="${theme.cyan}" stroke-opacity=".55" transform="rotate(-24)">
-      <animateTransform attributeName="transform" type="rotate" from="-24" to="336" dur="13s" repeatCount="indefinite"/>
-    </ellipse>
-    <circle r="35" fill="${theme.panel}" stroke="${theme.cyan}" stroke-width="1.5">
-      <animate attributeName="stroke-opacity" values=".55;.55;1;1;.55" keyTimes="0;.08;.18;.76;1" dur="${ANIMATION_DURATION_SECONDS}s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="25" fill="${theme.cyan}" fill-opacity=".08" stroke="${theme.green}">
-      <animate attributeName="r" values="22;22;29;25;22" keyTimes="0;.08;.18;.76;1" dur="${ANIMATION_DURATION_SECONDS}s" repeatCount="indefinite"/>
-      <animate attributeName="fill-opacity" values=".05;.05;.35;.18;.05" keyTimes="0;.08;.18;.76;1" dur="${ANIMATION_DURATION_SECONDS}s" repeatCount="indefinite"/>
-    </circle>
-    <text x="0" y="8" text-anchor="middle" fill="${theme.text}" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="800">VF</text>
-    <text x="0" y="72" text-anchor="middle" fill="${theme.cyan}" font-family="Consolas,monospace" font-size="9" letter-spacing="1.2">INTEGRATION CORE</text>
+export function renderVfCore(theme: ProfileTheme, targets: BeamTarget[]): string {
+  const total = TARGETING.totalDurationSeconds;
+  const chargeKey = (PHASE.chargeEnd / total).toFixed(4);
+  const fireKey = (PHASE.fireEnd / total).toFixed(4);
+  const cooldownKey = (PHASE.cooldownEnd / total).toFixed(4);
+  return `<g transform="translate(${TARGETING.coreX} ${TARGETING.coreY})">
+    <circle r="47" fill="${theme.panel}" stroke="${theme.border}"/>
+    <circle r="34" fill="none" stroke="${theme.cyan}" stroke-width="2"/>
+    <path d="M-43 0H43M0-43V43" stroke="${theme.grid}"/>
+    <text y="8" text-anchor="middle" fill="${theme.text}" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">VF</text>
+    ${targets.map((target) => `<circle r="35" fill="none" stroke="${theme.green}" stroke-width="2" opacity="0">
+      <animate attributeName="r" values="35;35;43;39;35;35" keyTimes="0;${(PHASE.acquireEnd / total).toFixed(4)};${chargeKey};${fireKey};${cooldownKey};1" begin="${target.startTime}s" dur="${total}s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;.85;1;0;0" keyTimes="0;${(PHASE.acquireEnd / total).toFixed(4)};${chargeKey};${fireKey};${cooldownKey};1" begin="${target.startTime}s" dur="${total}s" repeatCount="indefinite"/>
+    </circle>`).join("\n")}
   </g>`;
 }

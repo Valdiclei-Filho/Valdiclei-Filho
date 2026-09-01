@@ -3,4 +3,3 @@ export const DEFAULT_OUTPUT_DIR = process.env.PROFILE_OUTPUT_DIR ?? "assets/gene
 export const GRAPHQL_ENDPOINT = "https://api.github.com/graphql";
 export const GENERATOR_VERSION = "VFCE 1.0";
 export const SVG_MAX_BYTES = 750_000;
-export const ANIMATION_DURATION_SECONDS = 9;

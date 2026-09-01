@@ -10,6 +10,7 @@ const forbiddenPatterns = [
   /javascript\s*:/i,
   /(?:href|xlink:href)\s*=\s*["']https?:/i
 ];
+const unescapedAmpersand = /&(?!#\d+;|#x[0-9a-f]+;|[a-z][a-z0-9]+;)/i;
 
 export function validateSvg(svg: string, filename = "asset.svg"): void {
   if (!svg.trim()) throw new Error(`${filename}: SVG vazio.`);
@@ -17,6 +18,7 @@ export function validateSvg(svg: string, filename = "asset.svg"): void {
   for (const pattern of forbiddenPatterns) {
     if (pattern.test(svg)) throw new Error(`${filename}: conteúdo incompatível ou inseguro (${pattern.source}).`);
   }
+  if (unescapedAmpersand.test(svg)) throw new Error(`${filename}: ampersand não escapado.`);
   if (!svg.includes("<title") || !svg.includes("<desc")) throw new Error(`${filename}: title e desc são obrigatórios.`);
   if (!/viewBox="0 0 \d+ \d+"/.test(svg)) throw new Error(`${filename}: viewBox responsivo ausente.`);
   if (!svg.includes('xmlns="http://www.w3.org/2000/svg"')) throw new Error(`${filename}: namespace SVG ausente.`);

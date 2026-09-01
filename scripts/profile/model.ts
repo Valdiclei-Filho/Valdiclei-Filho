@@ -37,12 +37,25 @@ export type ProfileData = {
   contributionWeeks: ContributionWeek[];
 };
 
+export type BeamTarget = {
+  date: string;
+  count: number;
+  level: ContributionLevel;
+  weekIndex: number;
+  weekday: number;
+  x: number;
+  y: number;
+  sequenceIndex: number;
+  startTime: number;
+};
+
 export type ThemeName = "dark" | "light";
 
 export type ProfileTheme = {
   name: ThemeName;
   background: string;
   panel: string;
+  panelSecondary: string;
   grid: string;
   border: string;
   cyan: string;

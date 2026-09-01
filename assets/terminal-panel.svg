@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="118" viewBox="0 0 1000 118" role="img" aria-labelledby="title desc">
-  <title id="title">Terminal de integrações</title><desc id="desc">Mensagem final: conectar, validar, transformar e entregar.</desc>
-  <rect width="1000" height="118" rx="14" fill="#071018"/><rect x="1" y="1" width="998" height="116" rx="13" fill="none" stroke="#1d5d7d"/>
-  <text x="34" y="37" fill="#58d4f7" font-family="Consolas,monospace" font-size="14" letter-spacing="1.2">TERMINAL // INTEGRAÇÕES</text><circle cx="269" cy="32" r="5" fill="#50d47c"/><text x="283" y="37" fill="#66de8b" font-family="Consolas,monospace" font-size="13">ONLINE</text>
-  <path d="M34 51h932" stroke="#1f556c"/><text x="35" y="84" fill="#65df8d" font-family="Consolas,monospace" font-size="18">integracoes@vf:~$</text><text x="223" y="84" fill="#d9edf4" font-family="Consolas,monospace" font-size="18">conectar → validar → transformar → entregar</text><rect x="35" y="94" width="10" height="15" fill="#58d4f7"/>
-</svg>
