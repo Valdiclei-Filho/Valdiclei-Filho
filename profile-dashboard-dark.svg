@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1000 620">
   <title id="title">GitHub Telemetry de Valdiclei Filho</title>
-  <desc id="desc">Telemetria oficial com 202 contribuições, 119 commits, 3 pull requests, 74 issues e 25 repositórios.</desc>
+  <desc id="desc">Telemetria oficial com 203 contribuições, 120 commits, 3 pull requests, 74 issues e 25 repositórios.</desc>
   <defs>
     <pattern id="vf-grid-02-dark" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#102536" stroke-width="1"/></pattern>
   </defs>
@@ -12,10 +12,10 @@
   <path d="M28 52H972" stroke="#15506b" stroke-width="1"/>
   <g><path d="M42 79H215" stroke="#39d353" stroke-width="2"/>
     <text x="42" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">CONTRIBUIÇÕES / 12M</text>
-    <text x="42" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">202</text></g>
+    <text x="42" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">203</text></g>
 <g><path d="M232 79H405" stroke="#00c8ff" stroke-width="2"/>
     <text x="232" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">COMMITS / 12M</text>
-    <text x="232" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">119</text></g>
+    <text x="232" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">120</text></g>
 <g><path d="M422 79H595" stroke="#ff8a1f" stroke-width="2"/>
     <text x="422" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">PULL REQUESTS / 12M</text>
     <text x="422" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">3</text></g>
@@ -27,11 +27,11 @@
     <text x="802" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">25</text></g>
   <path d="M28 174H972" stroke="#15506b"/>
   <text x="42" y="213" fill="#00c8ff" font-family="Consolas,ui-monospace,monospace" font-size="15">A // CONTRIBUTION SIGNAL</text>
-  <text x="42" y="254" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">202 eventos registrados</text>
+  <text x="42" y="254" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">203 eventos registrados</text>
   <text x="42" y="280" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">AGREGAÇÃO OFICIAL • ÚLTIMOS 12 MESES</text>
   <defs><linearGradient id="chart-dark" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#39d353" stop-opacity=".26"/><stop offset="1" stop-color="#39d353" stop-opacity="0"/></linearGradient></defs>
   <path d="M48 370H606M48 425H606" stroke="#102536" stroke-dasharray="3 7"/>
-  <polygon points="48,493 48.0,489.0 58.7,493.0 69.5,493.0 80.2,493.0 90.9,493.0 101.7,493.0 112.4,485.0 123.1,493.0 133.8,493.0 144.6,493.0 155.3,493.0 166.0,493.0 176.8,493.0 187.5,493.0 198.2,493.0 209.0,493.0 219.7,493.0 230.4,493.0 241.2,493.0 251.9,493.0 262.6,493.0 273.3,493.0 284.1,493.0 294.8,493.0 305.5,493.0 316.3,493.0 327.0,493.0 337.7,493.0 348.5,493.0 359.2,493.0 369.9,493.0 380.7,493.0 391.4,493.0 402.1,493.0 412.8,493.0 423.6,493.0 434.3,493.0 445.0,493.0 455.8,493.0 466.5,493.0 477.2,485.0 488.0,493.0 498.7,493.0 509.4,477.0 520.2,493.0 530.9,493.0 541.6,493.0 552.3,493.0 563.1,493.0 573.8,493.0 584.5,486.3 595.3,337.0 606.0,422.3 606,493" fill="url(#chart-dark)"/><polyline points="48.0,489.0 58.7,493.0 69.5,493.0 80.2,493.0 90.9,493.0 101.7,493.0 112.4,485.0 123.1,493.0 133.8,493.0 144.6,493.0 155.3,493.0 166.0,493.0 176.8,493.0 187.5,493.0 198.2,493.0 209.0,493.0 219.7,493.0 230.4,493.0 241.2,493.0 251.9,493.0 262.6,493.0 273.3,493.0 284.1,493.0 294.8,493.0 305.5,493.0 316.3,493.0 327.0,493.0 337.7,493.0 348.5,493.0 359.2,493.0 369.9,493.0 380.7,493.0 391.4,493.0 402.1,493.0 412.8,493.0 423.6,493.0 434.3,493.0 445.0,493.0 455.8,493.0 466.5,493.0 477.2,485.0 488.0,493.0 498.7,493.0 509.4,477.0 520.2,493.0 530.9,493.0 541.6,493.0 552.3,493.0 563.1,493.0 573.8,493.0 584.5,486.3 595.3,337.0 606.0,422.3" fill="none" stroke="#39d353" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="48,493 48.0,489.0 58.7,493.0 69.5,493.0 80.2,493.0 90.9,493.0 101.7,493.0 112.4,485.0 123.1,493.0 133.8,493.0 144.6,493.0 155.3,493.0 166.0,493.0 176.8,493.0 187.5,493.0 198.2,493.0 209.0,493.0 219.7,493.0 230.4,493.0 241.2,493.0 251.9,493.0 262.6,493.0 273.3,493.0 284.1,493.0 294.8,493.0 305.5,493.0 316.3,493.0 327.0,493.0 337.7,493.0 348.5,493.0 359.2,493.0 369.9,493.0 380.7,493.0 391.4,493.0 402.1,493.0 412.8,493.0 423.6,493.0 434.3,493.0 445.0,493.0 455.8,493.0 466.5,493.0 477.2,485.0 488.0,493.0 498.7,493.0 509.4,477.0 520.2,493.0 530.9,493.0 541.6,493.0 552.3,493.0 563.1,493.0 573.8,493.0 584.5,486.3 595.3,337.0 606.0,421.0 606,493" fill="url(#chart-dark)"/><polyline points="48.0,489.0 58.7,493.0 69.5,493.0 80.2,493.0 90.9,493.0 101.7,493.0 112.4,485.0 123.1,493.0 133.8,493.0 144.6,493.0 155.3,493.0 166.0,493.0 176.8,493.0 187.5,493.0 198.2,493.0 209.0,493.0 219.7,493.0 230.4,493.0 241.2,493.0 251.9,493.0 262.6,493.0 273.3,493.0 284.1,493.0 294.8,493.0 305.5,493.0 316.3,493.0 327.0,493.0 337.7,493.0 348.5,493.0 359.2,493.0 369.9,493.0 380.7,493.0 391.4,493.0 402.1,493.0 412.8,493.0 423.6,493.0 434.3,493.0 445.0,493.0 455.8,493.0 466.5,493.0 477.2,485.0 488.0,493.0 498.7,493.0 509.4,477.0 520.2,493.0 530.9,493.0 541.6,493.0 552.3,493.0 563.1,493.0 573.8,493.0 584.5,486.3 595.3,337.0 606.0,421.0" fill="none" stroke="#39d353" stroke-width="2" stroke-linejoin="round"/>
   <text x="48" y="519" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">52 SEMANAS ATRÁS</text>
   <text x="606" y="519" text-anchor="end" fill="#39d353" font-family="Consolas,ui-monospace,monospace" font-size="12">AGORA</text>
   <path d="M638 198V568" stroke="#15506b"/>
@@ -49,7 +49,7 @@
 <g><circle cx="677" cy="405" r="4" fill="#3572A5"/>
     <text x="689" y="410" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">Python</text>
     <text x="940" y="410" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">11%</text>
-    <rect x="672" y="422" width="268" height="5" rx="2" fill="#102536"/><rect x="672" y="422" width="29" height="5" rx="2" fill="#3572A5"/></g>
+    <rect x="672" y="422" width="268" height="5" rx="2" fill="#102536"/><rect x="672" y="422" width="28" height="5" rx="2" fill="#3572A5"/></g>
 <g><circle cx="677" cy="449" r="4" fill="#e34c26"/>
     <text x="689" y="454" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">HTML</text>
     <text x="940" y="454" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">5%</text>
