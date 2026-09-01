@@ -41,11 +41,11 @@
   <g><circle cx="677" cy="317" r="4" fill="#3178c6"/>
     <text x="689" y="322" fill="#102b3a" font-family="Segoe UI,Arial,sans-serif" font-size="14">TypeScript</text>
     <text x="940" y="322" text-anchor="end" fill="#4c6f80" font-family="Consolas,ui-monospace,monospace" font-size="12">43%</text>
-    <rect x="672" y="334" width="268" height="5" rx="2" fill="#dcecf4"/><rect x="672" y="334" width="114" height="5" rx="2" fill="#3178c6"/></g>
+    <rect x="672" y="334" width="268" height="5" rx="2" fill="#dcecf4"/><rect x="672" y="334" width="116" height="5" rx="2" fill="#3178c6"/></g>
 <g><circle cx="677" cy="361" r="4" fill="#A97BFF"/>
     <text x="689" y="366" fill="#102b3a" font-family="Segoe UI,Arial,sans-serif" font-size="14">Kotlin</text>
     <text x="940" y="366" text-anchor="end" fill="#4c6f80" font-family="Consolas,ui-monospace,monospace" font-size="12">34%</text>
-    <rect x="672" y="378" width="268" height="5" rx="2" fill="#dcecf4"/><rect x="672" y="378" width="91" height="5" rx="2" fill="#A97BFF"/></g>
+    <rect x="672" y="378" width="268" height="5" rx="2" fill="#dcecf4"/><rect x="672" y="378" width="90" height="5" rx="2" fill="#A97BFF"/></g>
 <g><circle cx="677" cy="405" r="4" fill="#3572A5"/>
     <text x="689" y="410" fill="#102b3a" font-family="Segoe UI,Arial,sans-serif" font-size="14">Python</text>
     <text x="940" y="410" text-anchor="end" fill="#4c6f80" font-family="Consolas,ui-monospace,monospace" font-size="12">11%</text>
@@ -61,7 +61,7 @@
 <g><circle cx="677" cy="537" r="4" fill="#663399"/>
     <text x="689" y="542" fill="#102b3a" font-family="Segoe UI,Arial,sans-serif" font-size="14">CSS</text>
     <text x="940" y="542" text-anchor="end" fill="#4c6f80" font-family="Consolas,ui-monospace,monospace" font-size="12">3%</text>
-    <rect x="672" y="554" width="268" height="5" rx="2" fill="#dcecf4"/><rect x="672" y="554" width="9" height="5" rx="2" fill="#663399"/></g>
+    <rect x="672" y="554" width="268" height="5" rx="2" fill="#dcecf4"/><rect x="672" y="554" width="8" height="5" rx="2" fill="#663399"/></g>
   <path d="M28 574H972" stroke="#58a9c7"/>
   <circle cx="42" cy="597" r="4" fill="#168638"/><text x="56" y="602" fill="#4c6f80" font-family="Consolas,ui-monospace,monospace" font-size="12">OFFICIAL GITHUB GRAPHQL DATA • VFCE 1.0</text>
 </svg>
