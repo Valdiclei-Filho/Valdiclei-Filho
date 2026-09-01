@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="178" viewBox="0 0 1000 178" role="img" aria-labelledby="title desc">
+  <title id="title">Stack principal e tecnologias em evolução</title><desc id="desc">Docker, Node.js, TypeScript, AWS Lambda, APIs, bancos de dados e tecnologias em evolução.</desc>
+  <rect width="1000" height="178" rx="16" fill="#071018"/><rect x="1" y="1" width="998" height="176" rx="15" fill="none" stroke="#1d5d7d"/>
+  <text x="38" y="37" fill="#58d4f7" font-family="Consolas,monospace" font-size="15" letter-spacing="1.2">STACK PRINCIPAL</text><path d="M38 51h924" stroke="#1f556c"/>
+  <g fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700"><text x="40" y="91">Docker</text><text x="160" y="91">Node.js</text><text x="289" y="91">TypeScript</text><text x="449" y="91">AWS Lambda</text><text x="630" y="91">REST / SOAP</text><text x="786" y="91">SQL / MySQL</text></g>
+  <g fill="#4d90af" font-family="Segoe UI,Arial,sans-serif" font-size="20"><text x="126" y="91">•</text><text x="254" y="91">•</text><text x="410" y="91">•</text><text x="587" y="91">•</text><text x="747" y="91">•</text></g>
+  <text x="40" y="128" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">JasperReports</text><text x="182" y="128" fill="#4d90af" font-family="Segoe UI,Arial,sans-serif" font-size="20">•</text><text x="207" y="128" fill="#b8d3dd" font-family="Segoe UI,Arial,sans-serif" font-size="17">CloudWatch</text><text x="335" y="128" fill="#4d90af" font-family="Segoe UI,Arial,sans-serif" font-size="20">•</text><text x="360" y="128" fill="#b8d3dd" font-family="Segoe UI,Arial,sans-serif" font-size="17">Dynatrace</text>
+  <path d="M38 143h924" stroke="#1f556c"/><text x="40" y="165" fill="#b99af0" font-family="Consolas,monospace" font-size="13">EM EVOLUÇÃO: Python • FastAPI • PostgreSQL • backend dedicado</text>
+</svg>
