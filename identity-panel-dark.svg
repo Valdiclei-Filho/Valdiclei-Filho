@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1000 300">
+  <title id="title">VF Integration Command Center</title>
+  <desc id="desc">Identidade profissional de Valdiclei Filho, desenvolvedor de integrações em Blumenau - SC.</desc>
+  <defs>
+    <pattern id="vf-grid-00-dark" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#102536" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1000" height="300" rx="10" fill="#060b12"/>
+  <rect x=".5" y=".5" width="999" height="299" rx="10" fill="url(#vf-grid-00-dark)" fill-opacity=".34" stroke="#15506b" stroke-width="1"/>
+  <text x="28" y="33" fill="#00c8ff" font-family="Consolas,ui-monospace,monospace" font-size="13" letter-spacing="1.2">00 // IDENTITY</text>
+  <circle cx="792" cy="28" r="4" fill="#39d353"/>
+  <text x="972" y="33" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">CONNECTION AVAILABLE</text>
+  <path d="M28 52H972" stroke="#15506b" stroke-width="1"/>
+  <g transform="translate(118 156)">
+    <circle r="58" fill="#09131d" stroke="#15506b"/>
+    <circle r="43" fill="none" stroke="#00c8ff" stroke-width="2"/>
+    <path d="M-52 0H52M0-52V52" stroke="#102536"/>
+    <path d="M-35-35A50 50 0 0 1 38-31" fill="none" stroke="#ff8a1f" stroke-width="2"/>
+    <text y="10" text-anchor="middle" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800">VF</text>
+  </g>
+  <text x="218" y="116" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="44" font-weight="750">Valdiclei Filho</text>
+  <text x="220" y="154" fill="#39d353" font-family="Consolas,ui-monospace,monospace" font-size="21" letter-spacing=".8">DESENVOLVEDOR DE INTEGRAÇÕES</text>
+  <text x="220" y="190" fill="#8fb3c7" font-family="Segoe UI,Arial,sans-serif" font-size="17">APIs, sistemas corporativos e automação confiável.</text>
+  <text x="220" y="226" fill="#00c8ff" font-family="Consolas,ui-monospace,monospace" font-size="14">CONECTAR  &gt;  VALIDAR  &gt;  TRANSFORMAR  &gt;  ENTREGAR</text>
+  <path d="M704 88V236" stroke="#15506b"/>
+  <text x="738" y="112" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">OPERATION BASE</text>
+  <text x="738" y="140" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">Blumenau - SC</text>
+  <circle cx="742" cy="179" r="4" fill="#39d353"/><text x="754" y="184" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">INTEGRATION SYSTEMS</text>
+  <circle cx="742" cy="207" r="4" fill="#39d353"/><text x="754" y="212" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">OBSERVABILITY</text>
+  <circle cx="742" cy="235" r="4" fill="#39d353"/><text x="754" y="240" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">DATA &amp; REPORTING</text>
+  <text x="28" y="278" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">CONECTANDO SISTEMAS. ENTREGANDO VALOR.</text>
+</svg>

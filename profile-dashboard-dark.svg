@@ -1,116 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 980 600">
-  <title id="title">GitHub Command Center de Valdiclei Filho</title>
-  <desc id="desc">Dashboard atualizado com 202 contribuições, 119 commits, 3 pull requests, 74 issues e 25 repositórios.</desc>
-  
-  <rect width="980" height="600" rx="8" fill="#060b12"/>
-  <path d="M0 32H980M20 0V600M960 0V600" stroke="#102536" opacity=".55"/>
-  <g opacity=".14" stroke="#00c8ff"><path d="M20 0V600"/><path d="M60 0V600"/><path d="M100 0V600"/><path d="M140 0V600"/><path d="M180 0V600"/><path d="M220 0V600"/><path d="M260 0V600"/><path d="M300 0V600"/><path d="M340 0V600"/><path d="M380 0V600"/><path d="M420 0V600"/><path d="M460 0V600"/><path d="M500 0V600"/><path d="M540 0V600"/><path d="M580 0V600"/><path d="M620 0V600"/><path d="M660 0V600"/><path d="M700 0V600"/><path d="M740 0V600"/><path d="M780 0V600"/><path d="M820 0V600"/><path d="M860 0V600"/><path d="M900 0V600"/><path d="M940 0V600"/><path d="M980 0V600"/></g>
-  <text x="38" y="34" fill="#00c8ff" font-family="Consolas,monospace" font-size="13" letter-spacing="1.4">GITHUB COMMAND CENTER // VFCE 1.0</text>
-  <text x="942" y="34" text-anchor="end" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">SYNC 1 DE SET. DE 2026</text>
-  <g>
-    <path d="M42 54H952V166H28V68Z" fill="#09131d" stroke="#15506b"/>
-    <path d="M28 68L42 54M916 54h36v36" fill="none" stroke="#00c8ff" opacity=".7"/>
-    <text x="46" y="81" fill="#00c8ff" font-family="Consolas,monospace" font-size="12" letter-spacing="1">01 // TELEMETRIA DO PERFIL</text>
-  </g>
-  <g>
-    <rect x="47" y="82" width="166" height="72" rx="3" fill="#09131d" stroke="#102536"/>
-    <path d="M47 82h38" stroke="#39d353" stroke-width="2"/>
-    <text x="62" y="108" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">CONTRIBUIÇÕES / 1 ANO</text>
-    <text x="62" y="138" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">202</text>
-  </g>
-  <g>
-    <rect x="225" y="82" width="166" height="72" rx="3" fill="#09131d" stroke="#102536"/>
-    <path d="M225 82h38" stroke="#00c8ff" stroke-width="2"/>
-    <text x="240" y="108" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">COMMITS / 1 ANO</text>
-    <text x="240" y="138" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">119</text>
-  </g>
-  <g>
-    <rect x="403" y="82" width="166" height="72" rx="3" fill="#09131d" stroke="#102536"/>
-    <path d="M403 82h38" stroke="#ff8a1f" stroke-width="2"/>
-    <text x="418" y="108" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">PULL REQUESTS / 1 ANO</text>
-    <text x="418" y="138" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">3</text>
-  </g>
-  <g>
-    <rect x="581" y="82" width="166" height="72" rx="3" fill="#09131d" stroke="#102536"/>
-    <path d="M581 82h38" stroke="#00c8ff" stroke-width="2"/>
-    <text x="596" y="108" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">ISSUES / 1 ANO</text>
-    <text x="596" y="138" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">74</text>
-  </g>
-  <g>
-    <rect x="759" y="82" width="166" height="72" rx="3" fill="#09131d" stroke="#102536"/>
-    <path d="M759 82h38" stroke="#39d353" stroke-width="2"/>
-    <text x="774" y="108" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">REPOSITÓRIOS</text>
-    <text x="774" y="138" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">25</text>
-  </g>
-  <g>
-    <path d="M42 184H620V560H28V198Z" fill="#09131d" stroke="#15506b"/>
-    <path d="M28 198L42 184M584 184h36v36" fill="none" stroke="#00c8ff" opacity=".7"/>
-    <text x="46" y="211" fill="#00c8ff" font-family="Consolas,monospace" font-size="12" letter-spacing="1">02 // SINAL DE CONTRIBUIÇÕES</text>
-  </g>
-  <text x="49" y="241" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">202 eventos registrados</text>
-  <text x="49" y="260" fill="#8fb3c7" font-family="Consolas,monospace" font-size="10">AGREGAÇÃO OFICIAL DO GITHUB • ÚLTIMOS 12 MESES</text>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1000 620">
+  <title id="title">GitHub Telemetry de Valdiclei Filho</title>
+  <desc id="desc">Telemetria oficial com 202 contribuições, 119 commits, 3 pull requests, 74 issues e 25 repositórios.</desc>
   <defs>
-    <linearGradient id="chart-fill-dark" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#39d353" stop-opacity=".38"/><stop offset="1" stop-color="#39d353" stop-opacity="0"/>
-    </linearGradient>
+    <pattern id="vf-grid-02-dark" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#102536" stroke-width="1"/></pattern>
   </defs>
-  <g>
-    <path d="M49 303H594M49 343H594M49 383H594" stroke="#102536" stroke-dasharray="3 5"/>
-    <polygon points="49,415 49.0,411.6 59.5,415.0 70.0,415.0 80.4,415.0 90.9,415.0 101.4,415.0 111.9,408.2 122.4,415.0 132.8,415.0 143.3,415.0 153.8,415.0 164.3,415.0 174.8,415.0 185.3,415.0 195.7,415.0 206.2,415.0 216.7,415.0 227.2,415.0 237.7,415.0 248.1,415.0 258.6,415.0 269.1,415.0 279.6,415.0 290.1,415.0 300.5,415.0 311.0,415.0 321.5,415.0 332.0,415.0 342.5,415.0 352.9,415.0 363.4,415.0 373.9,415.0 384.4,415.0 394.9,415.0 405.3,415.0 415.8,415.0 426.3,415.0 436.8,415.0 447.3,415.0 457.8,415.0 468.2,408.2 478.7,415.0 489.2,415.0 499.7,401.5 510.2,415.0 520.6,415.0 531.1,415.0 541.6,415.0 552.1,415.0 562.6,415.0 573.0,409.4 583.5,283.0 594.0,355.2 594,415" fill="url(#chart-fill-dark)"/>
-    <polyline points="49.0,411.6 59.5,415.0 70.0,415.0 80.4,415.0 90.9,415.0 101.4,415.0 111.9,408.2 122.4,415.0 132.8,415.0 143.3,415.0 153.8,415.0 164.3,415.0 174.8,415.0 185.3,415.0 195.7,415.0 206.2,415.0 216.7,415.0 227.2,415.0 237.7,415.0 248.1,415.0 258.6,415.0 269.1,415.0 279.6,415.0 290.1,415.0 300.5,415.0 311.0,415.0 321.5,415.0 332.0,415.0 342.5,415.0 352.9,415.0 363.4,415.0 373.9,415.0 384.4,415.0 394.9,415.0 405.3,415.0 415.8,415.0 426.3,415.0 436.8,415.0 447.3,415.0 457.8,415.0 468.2,408.2 478.7,415.0 489.2,415.0 499.7,401.5 510.2,415.0 520.6,415.0 531.1,415.0 541.6,415.0 552.1,415.0 562.6,415.0 573.0,409.4 583.5,283.0 594.0,355.2" fill="none" stroke="#39d353" stroke-width="2" stroke-linejoin="round"/>
-    <text x="49" y="437" fill="#8fb3c7" font-family="Consolas,monospace" font-size="10">52 SEMANAS ATRÁS</text>
-    <text x="594" y="437" text-anchor="end" fill="#39d353" font-family="Consolas,monospace" font-size="10">AGORA</text>
-  </g>
-  <circle cx="49" cy="522" r="5" fill="#39d353"/><text x="63" y="526" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">SINAL ATIVO // DADOS NORMALIZADOS</text>
-  <g>
-    <path d="M646 184H952V560H632V198Z" fill="#09131d" stroke="#15506b"/>
-    <path d="M632 198L646 184M916 184h36v36" fill="none" stroke="#00c8ff" opacity=".7"/>
-    <text x="650" y="211" fill="#00c8ff" font-family="Consolas,monospace" font-size="12" letter-spacing="1">03 // LINGUAGENS DOS REPOSITÓRIOS</text>
-  </g>
-  <text x="650" y="242" fill="#8fb3c7" font-family="Consolas,monospace" font-size="10">DISTRIBUIÇÃO POR BYTES • NÃO POR COMMITS</text>
-  <g>
-    <circle cx="651" cy="276" r="4" fill="#3178c6"/>
-    <text x="663" y="280" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="12">TypeScript</text>
-    <text x="926" y="280" text-anchor="end" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">42%</text>
-    <rect x="646" y="289" width="280" height="5" rx="2" fill="#102536"/>
-    <rect x="646" y="289" width="104" height="5" rx="2" fill="#3178c6"/>
-  </g>
-<g>
-    <circle cx="651" cy="319" r="4" fill="#A97BFF"/>
-    <text x="663" y="323" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="12">Kotlin</text>
-    <text x="926" y="323" text-anchor="end" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">35%</text>
-    <rect x="646" y="332" width="280" height="5" rx="2" fill="#102536"/>
-    <rect x="646" y="332" width="86" height="5" rx="2" fill="#A97BFF"/>
-  </g>
-<g>
-    <circle cx="651" cy="362" r="4" fill="#3572A5"/>
-    <text x="663" y="366" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="12">Python</text>
-    <text x="926" y="366" text-anchor="end" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">11%</text>
-    <rect x="646" y="375" width="280" height="5" rx="2" fill="#102536"/>
-    <rect x="646" y="375" width="28" height="5" rx="2" fill="#3572A5"/>
-  </g>
-<g>
-    <circle cx="651" cy="405" r="4" fill="#e34c26"/>
-    <text x="663" y="409" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="12">HTML</text>
-    <text x="926" y="409" text-anchor="end" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">5%</text>
-    <rect x="646" y="418" width="280" height="5" rx="2" fill="#102536"/>
-    <rect x="646" y="418" width="14" height="5" rx="2" fill="#e34c26"/>
-  </g>
-<g>
-    <circle cx="651" cy="448" r="4" fill="#00B4AB"/>
-    <text x="663" y="452" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="12">Dart</text>
-    <text x="926" y="452" text-anchor="end" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">4%</text>
-    <rect x="646" y="461" width="280" height="5" rx="2" fill="#102536"/>
-    <rect x="646" y="461" width="10" height="5" rx="2" fill="#00B4AB"/>
-  </g>
-<g>
-    <circle cx="651" cy="491" r="4" fill="#663399"/>
-    <text x="663" y="495" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="12">CSS</text>
-    <text x="926" y="495" text-anchor="end" fill="#8fb3c7" font-family="Consolas,monospace" font-size="11">3%</text>
-    <rect x="646" y="504" width="280" height="5" rx="2" fill="#102536"/>
-    <rect x="646" y="504" width="8" height="5" rx="2" fill="#663399"/>
-  </g>
-  <text x="650" y="535" fill="#8fb3c7" font-family="Consolas,monospace" font-size="10">FONTE: GITHUB GRAPHQL API</text>
-  <path d="M8 8h25M8 8v25M972 8h-25M972 8v25M8 592h25M8 592v-25M972 592h-25M972 592v-25" stroke="#00c8ff"/>
-  
+  <rect width="1000" height="620" rx="10" fill="#060b12"/>
+  <rect x=".5" y=".5" width="999" height="619" rx="10" fill="url(#vf-grid-02-dark)" fill-opacity=".34" stroke="#15506b" stroke-width="1"/>
+  <text x="28" y="33" fill="#00c8ff" font-family="Consolas,ui-monospace,monospace" font-size="13" letter-spacing="1.2">02 // GITHUB TELEMETRY</text>
+  <circle cx="792" cy="28" r="4" fill="#39d353"/>
+  <text x="972" y="33" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">SYNC 1 DE SET. DE 2026</text>
+  <path d="M28 52H972" stroke="#15506b" stroke-width="1"/>
+  <g><path d="M42 79H215" stroke="#39d353" stroke-width="2"/>
+    <text x="42" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">CONTRIBUIÇÕES / 12M</text>
+    <text x="42" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">202</text></g>
+<g><path d="M232 79H405" stroke="#00c8ff" stroke-width="2"/>
+    <text x="232" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">COMMITS / 12M</text>
+    <text x="232" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">119</text></g>
+<g><path d="M422 79H595" stroke="#ff8a1f" stroke-width="2"/>
+    <text x="422" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">PULL REQUESTS / 12M</text>
+    <text x="422" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">3</text></g>
+<g><path d="M612 79H785" stroke="#00c8ff" stroke-width="2"/>
+    <text x="612" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">ISSUES / 12M</text>
+    <text x="612" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">74</text></g>
+<g><path d="M802 79H975" stroke="#39d353" stroke-width="2"/>
+    <text x="802" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">REPOSITÓRIOS</text>
+    <text x="802" y="144" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">25</text></g>
+  <path d="M28 174H972" stroke="#15506b"/>
+  <text x="42" y="213" fill="#00c8ff" font-family="Consolas,ui-monospace,monospace" font-size="15">A // CONTRIBUTION SIGNAL</text>
+  <text x="42" y="254" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">202 eventos registrados</text>
+  <text x="42" y="280" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">AGREGAÇÃO OFICIAL • ÚLTIMOS 12 MESES</text>
+  <defs><linearGradient id="chart-dark" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#39d353" stop-opacity=".26"/><stop offset="1" stop-color="#39d353" stop-opacity="0"/></linearGradient></defs>
+  <path d="M48 370H606M48 425H606" stroke="#102536" stroke-dasharray="3 7"/>
+  <polygon points="48,493 48.0,489.0 58.7,493.0 69.5,493.0 80.2,493.0 90.9,493.0 101.7,493.0 112.4,485.0 123.1,493.0 133.8,493.0 144.6,493.0 155.3,493.0 166.0,493.0 176.8,493.0 187.5,493.0 198.2,493.0 209.0,493.0 219.7,493.0 230.4,493.0 241.2,493.0 251.9,493.0 262.6,493.0 273.3,493.0 284.1,493.0 294.8,493.0 305.5,493.0 316.3,493.0 327.0,493.0 337.7,493.0 348.5,493.0 359.2,493.0 369.9,493.0 380.7,493.0 391.4,493.0 402.1,493.0 412.8,493.0 423.6,493.0 434.3,493.0 445.0,493.0 455.8,493.0 466.5,493.0 477.2,485.0 488.0,493.0 498.7,493.0 509.4,477.0 520.2,493.0 530.9,493.0 541.6,493.0 552.3,493.0 563.1,493.0 573.8,493.0 584.5,486.3 595.3,337.0 606.0,422.3 606,493" fill="url(#chart-dark)"/><polyline points="48.0,489.0 58.7,493.0 69.5,493.0 80.2,493.0 90.9,493.0 101.7,493.0 112.4,485.0 123.1,493.0 133.8,493.0 144.6,493.0 155.3,493.0 166.0,493.0 176.8,493.0 187.5,493.0 198.2,493.0 209.0,493.0 219.7,493.0 230.4,493.0 241.2,493.0 251.9,493.0 262.6,493.0 273.3,493.0 284.1,493.0 294.8,493.0 305.5,493.0 316.3,493.0 327.0,493.0 337.7,493.0 348.5,493.0 359.2,493.0 369.9,493.0 380.7,493.0 391.4,493.0 402.1,493.0 412.8,493.0 423.6,493.0 434.3,493.0 445.0,493.0 455.8,493.0 466.5,493.0 477.2,485.0 488.0,493.0 498.7,493.0 509.4,477.0 520.2,493.0 530.9,493.0 541.6,493.0 552.3,493.0 563.1,493.0 573.8,493.0 584.5,486.3 595.3,337.0 606.0,422.3" fill="none" stroke="#39d353" stroke-width="2" stroke-linejoin="round"/>
+  <text x="48" y="519" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">52 SEMANAS ATRÁS</text>
+  <text x="606" y="519" text-anchor="end" fill="#39d353" font-family="Consolas,ui-monospace,monospace" font-size="12">AGORA</text>
+  <path d="M638 198V568" stroke="#15506b"/>
+  <text x="672" y="213" fill="#00c8ff" font-family="Consolas,ui-monospace,monospace" font-size="15">B // REPOSITORY LANGUAGES</text>
+  <text x="672" y="254" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="650">Distribuição técnica</text>
+  <text x="672" y="280" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">BYTES DOS REPOSITÓRIOS • NÃO COMMITS</text>
+  <g><circle cx="677" cy="317" r="4" fill="#3178c6"/>
+    <text x="689" y="322" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">TypeScript</text>
+    <text x="940" y="322" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">43%</text>
+    <rect x="672" y="334" width="268" height="5" rx="2" fill="#102536"/><rect x="672" y="334" width="114" height="5" rx="2" fill="#3178c6"/></g>
+<g><circle cx="677" cy="361" r="4" fill="#A97BFF"/>
+    <text x="689" y="366" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">Kotlin</text>
+    <text x="940" y="366" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">34%</text>
+    <rect x="672" y="378" width="268" height="5" rx="2" fill="#102536"/><rect x="672" y="378" width="91" height="5" rx="2" fill="#A97BFF"/></g>
+<g><circle cx="677" cy="405" r="4" fill="#3572A5"/>
+    <text x="689" y="410" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">Python</text>
+    <text x="940" y="410" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">11%</text>
+    <rect x="672" y="422" width="268" height="5" rx="2" fill="#102536"/><rect x="672" y="422" width="29" height="5" rx="2" fill="#3572A5"/></g>
+<g><circle cx="677" cy="449" r="4" fill="#e34c26"/>
+    <text x="689" y="454" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">HTML</text>
+    <text x="940" y="454" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">5%</text>
+    <rect x="672" y="466" width="268" height="5" rx="2" fill="#102536"/><rect x="672" y="466" width="14" height="5" rx="2" fill="#e34c26"/></g>
+<g><circle cx="677" cy="493" r="4" fill="#00B4AB"/>
+    <text x="689" y="498" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">Dart</text>
+    <text x="940" y="498" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">4%</text>
+    <rect x="672" y="510" width="268" height="5" rx="2" fill="#102536"/><rect x="672" y="510" width="11" height="5" rx="2" fill="#00B4AB"/></g>
+<g><circle cx="677" cy="537" r="4" fill="#663399"/>
+    <text x="689" y="542" fill="#e8f4f8" font-family="Segoe UI,Arial,sans-serif" font-size="14">CSS</text>
+    <text x="940" y="542" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">3%</text>
+    <rect x="672" y="554" width="268" height="5" rx="2" fill="#102536"/><rect x="672" y="554" width="9" height="5" rx="2" fill="#663399"/></g>
+  <path d="M28 574H972" stroke="#15506b"/>
+  <circle cx="42" cy="597" r="4" fill="#39d353"/><text x="56" y="602" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">OFFICIAL GITHUB GRAPHQL DATA • VFCE 1.0</text>
 </svg>
