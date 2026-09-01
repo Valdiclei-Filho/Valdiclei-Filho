@@ -28,10 +28,16 @@ void test("fixture representa 53 semanas completas", () => {
 });
 
 void test("Contribution Targeting preserva a matriz e remove a varredura horizontal", () => {
-  const svg = renderContributionBeam(loadMockProfile(), getTheme("dark"));
+  const profile = loadMockProfile();
+  const activeCells = profile.contributionWeeks.flatMap(({ days }) => days).filter(({ count }) => count > 0).length;
+  const svg = renderContributionBeam(profile, getTheme("dark"));
   validateSvg(svg, "targeting.svg");
   assert.equal((svg.match(/<title>\d{4}-\d{2}-\d{2}:/g) ?? []).length, 371);
-  assert.match(svg, /TARGET LOCKED/);
+  assert.equal((svg.match(/data-cell-removal=/g) ?? []).length, activeCells);
+  assert.match(svg, new RegExp(`data-progress-total="${activeCells}"`));
+  assert.match(svg, new RegExp(`${activeCells} / ${activeCells} • 100%`));
+  assert.match(svg, /values="1;0;1"/);
+  assert.match(svg, /TARGET LOCK/);
   assert.match(svg, /CORE CHARGE/);
   assert.match(svg, /IMPACT/);
   assert.doesNotMatch(svg, /M120 139H|stroke-dashoffset="809"|CICLO DE ENERGIA/);
@@ -43,10 +49,11 @@ void test("seleção de alvos é determinística e usa somente contribuições r
   const first = selectBeamTargets(profile);
   const second = selectBeamTargets(profile);
   assert.deepEqual(first, second);
-  assert.equal(first.length, 4);
   const activeDates = new Set(profile.contributionWeeks.flatMap(({ days }) => days.filter(({ count }) => count > 0).map(({ date }) => date)));
+  assert.equal(first.length, activeDates.size);
   assert.ok(first.every(({ date, count }) => count > 0 && activeDates.has(date)));
-  assert.ok(new Set(first.map(({ weekIndex }) => Math.floor(weekIndex / 13))).size >= 3);
+  assert.deepEqual(first.map(({ sequenceIndex }) => sequenceIndex), first.map((_, index) => index));
+  assert.ok(first.every((target, index) => index === 0 || target.date >= (first[index - 1]?.date ?? "")));
 });
 
 void test("coordenadas apontam para o centro exato da célula", () => {
@@ -58,8 +65,20 @@ void test("feixes terminam exatamente nos alvos e mudam de ângulo", () => {
   const profile = loadMockProfile();
   const targets = selectBeamTargets(profile);
   const svg = renderContributionBeam(profile, getTheme("dark"));
-  for (const target of targets) assert.match(svg, new RegExp(`x2="${target.x}" y2="${target.y}"`));
+  assert.match(svg, new RegExp(`values="${targets.map(({ x }) => x).join(";")};${targets.at(-1)?.x}"`));
+  assert.match(svg, new RegExp(`values="${targets.map(({ y }) => y).join(";")};${targets.at(-1)?.y}"`));
   assert.ok(new Set(targets.map(({ y }) => y)).size > 1);
+});
+
+void test("progresso avança por célula ativa e reinicia junto com a matriz", () => {
+  const profile = loadMockProfile();
+  const targets = selectBeamTargets(profile);
+  const svg = renderContributionBeam(profile, getTheme("dark"));
+  assert.equal((svg.match(/data-progress-step=/g) ?? []).length, targets.length + 1);
+  assert.equal((svg.match(/data-cell-removal=/g) ?? []).length, targets.length);
+  assert.match(svg, />1 \/ \d+ • [^<]+%/);
+  assert.match(svg, new RegExp(`>${targets.length} / ${targets.length} • 100%`));
+  assert.match(svg, /CYCLE COMPLETE • RESETTING MATRIX/);
 });
 
 void test("matriz sem atividade exibe fallback sem coordenadas inválidas", () => {

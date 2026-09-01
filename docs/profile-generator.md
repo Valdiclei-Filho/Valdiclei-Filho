@@ -55,7 +55,7 @@ Os arquivos dark/light não são duplicados manualmente. O gerador executa o mes
 
 ## Seleção determinística de alvos
 
-`target-selector.ts` considera apenas células com `count > 0` nas últimas 53 semanas. A matriz é dividida em quatro segmentos temporais e o candidato mais relevante de cada segmento é escolhido por contagem, nível, recência e posição. Se algum segmento não possuir atividade, o preenchimento prioriza distância das células já selecionadas.
+`target-selector.ts` considera todas as células com `count > 0` nas últimas 53 semanas. Os alvos são percorridos em ordem cronológica e cada célula ativa participa exatamente uma vez do ciclo.
 
 O mesmo conjunto de dados sempre gera os mesmos alvos e a mesma ordem. Cada `BeamTarget` registra data, contagem, nível, semana, dia, coordenadas, posição na sequência e instante inicial. As coordenadas são o centro exato da célula:
 
@@ -66,22 +66,24 @@ y = gridY + weekday   * (cell + gapY) + cell / 2
 
 Sem contribuições, a matriz permanece visível, o painel mostra `NO ACTIVE TARGET` e nenhuma geometria inválida é criada.
 
-## Timeline e targeting
+## Timeline, eliminação e progresso
 
-São selecionados até quatro alvos. Cada alvo ocupa um slot de cinco segundos, sem disparos simultâneos:
+Cada célula com contribuição recebe um slot exclusivo, sem disparos simultâneos. O slot preserva as mesmas fases proporcionais:
 
 ```text
-0.00–0.70  SCAN
-0.70–1.20  TARGET ACQUIRED
-1.20–2.00  CORE CHARGE
-2.00–2.35  TARGET LOCK
-2.35–2.70  FIRE
-2.70–3.20  IMPACT
-3.20–4.00  RESIDUAL ENERGY
-4.00–5.00  COOLDOWN
+00–12%  SCAN
+12–28%  TARGET ACQUIRED
+28–48%  CORE CHARGE
+48–60%  TARGET LOCK
+60–74%  FIRE
+74–84%  IMPACT
+84–94%  RESIDUAL ENERGY
+94–100% COOLDOWN
 ```
 
-O ciclo completo dura vinte segundos. `beam-renderer.ts` cria duas linhas somente entre o centro do VF Core e o centro do alvo: glow difuso e energia central. `impact-renderer.ts` anima apenas a célula escolhida, com crescimento proporcional ao nível, anel residual e duas partículas discretas. `target-timeline.ts` apresenta o estado atual. O core possui somente um anel funcional de carga.
+O ciclo é calculado pela quantidade real de células ativas, com mínimo de vinte e máximo de sessenta segundos, incluindo 2,5 segundos para exibir a conclusão. `beam-renderer.ts` reutiliza o mesmo feixe entre o VF Core e cada alvo. No impacto, a célula atingida desaparece e a barra avança `1 ÷ total de células ativas`. Depois do último disparo, o painel mostra 100%; ao reiniciar o ciclo, todas as células reaparecem simultaneamente e a barra volta a 0%.
+
+`impact-renderer.ts` move um único efeito de impacto pela sequência, evitando centenas de efeitos duplicados. `progress-renderer.ts` mantém barra, contagem e porcentagem sincronizadas com as remoções. `target-timeline.ts` apresenta a fase atual e o estado `CYCLE COMPLETE • RESETTING MATRIX`.
 
 Se SMIL não executar, o fallback continua exibindo frame, título, core, matriz, intensidade oficial e métricas; feixes e impactos partem de opacidade zero.
 

@@ -31,9 +31,11 @@ export const EFFECT = {
 } as const;
 
 export const TARGETING = {
-  targetCount: 4,
-  targetSlotSeconds: 5,
-  totalDurationSeconds: 20,
+  minimumCycleSeconds: 20,
+  maximumCycleSeconds: 60,
+  secondsPerTarget: 0.85,
+  initialDelaySeconds: 1,
+  completionHoldSeconds: 2.5,
   coreX: 112,
   coreY: 151,
   gridX: 250,
@@ -46,12 +48,35 @@ export const TARGETING = {
 } as const;
 
 export const PHASE = {
-  scanEnd: 0.7,
-  acquireEnd: 1.2,
-  chargeEnd: 2,
-  lockEnd: 2.35,
-  fireEnd: 2.7,
-  impactEnd: 3.2,
-  residualEnd: 4,
-  cooldownEnd: 5
+  scanEnd: 0.12,
+  acquireEnd: 0.28,
+  chargeEnd: 0.48,
+  lockEnd: 0.6,
+  fireEnd: 0.74,
+  impactEnd: 0.84,
+  residualEnd: 0.94,
+  cooldownEnd: 1
 } as const;
+
+export type TargetingTiming = {
+  cycleDuration: number;
+  firingDuration: number;
+  initialDelayDuration: number;
+  completionHoldDuration: number;
+  slotDuration: number;
+};
+
+export function getTargetingTiming(targetCount: number): TargetingTiming {
+  const completionHoldDuration = TARGETING.completionHoldSeconds;
+  const initialDelayDuration = TARGETING.initialDelaySeconds;
+  const requestedCycle = initialDelayDuration + targetCount * TARGETING.secondsPerTarget + completionHoldDuration;
+  const cycleDuration = Math.min(TARGETING.maximumCycleSeconds, Math.max(TARGETING.minimumCycleSeconds, requestedCycle));
+  const firingDuration = cycleDuration - initialDelayDuration - completionHoldDuration;
+  return {
+    cycleDuration,
+    firingDuration,
+    initialDelayDuration,
+    completionHoldDuration,
+    slotDuration: targetCount > 0 ? firingDuration / targetCount : firingDuration
+  };
+}
