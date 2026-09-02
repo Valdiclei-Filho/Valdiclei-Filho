@@ -8,7 +8,7 @@
   <rect x=".5" y=".5" width="999" height="619" rx="10" fill="url(#vf-grid-02-dark)" fill-opacity=".34" stroke="#15506b" stroke-width="1"/>
   <text x="28" y="33" fill="#00c8ff" font-family="Consolas,ui-monospace,monospace" font-size="13" letter-spacing="1.2">02 // GITHUB TELEMETRY</text>
   <circle cx="792" cy="28" r="4" fill="#39d353"/>
-  <text x="972" y="33" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">SYNC 1 DE SET. DE 2026</text>
+  <text x="972" y="33" text-anchor="end" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">SYNC 2 DE SET. DE 2026</text>
   <path d="M28 52H972" stroke="#15506b" stroke-width="1"/>
   <g><path d="M42 79H215" stroke="#39d353" stroke-width="2"/>
     <text x="42" y="106" fill="#8fb3c7" font-family="Consolas,ui-monospace,monospace" font-size="12">CONTRIBUIÇÕES / 12M</text>
